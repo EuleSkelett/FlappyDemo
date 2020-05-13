@@ -4,10 +4,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector3;
 
-
-
-
-
 public class Bird {
     private static final int MOVEMENT = 100;
     private static final int GRAVITY = -15;
@@ -53,4 +49,8 @@ public class Bird {
         return bounds;
     }
 
+
+    public void dispose() {
+        bird.dispose();
+    }
 }

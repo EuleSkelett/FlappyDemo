@@ -6,9 +6,6 @@ import com.badlogic.gdx.math.Vector2;
 
 import java.util.Random;
 
-/**
- * Created by Vitaly on 13.11.2015.
- */
 public class Tube {
 
     public static final int TUBE_WIDTH = 52;
@@ -61,5 +58,10 @@ public class Tube {
 
     public boolean collides(Rectangle player){
         return player.overlaps(boundsTop) || player.overlaps(boundsBot);
+    }
+
+    public void dispose() {
+        topTube.dispose();
+        bottomTube.dispose();
     }
 }
