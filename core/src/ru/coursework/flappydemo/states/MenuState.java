@@ -5,6 +5,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import ru.coursework.flappydemo.FlappyDemo;
 
+import com.badlogic.gdx.Gdx;
+
 public class MenuState extends State {
 
     private Texture background;
@@ -18,11 +20,15 @@ public class MenuState extends State {
 
     @Override
     public void handleInput() {
+        if(Gdx.input.justTouched()){
+            gsm.set(new PlayState(gsm));
+        }
 
     }
 
     @Override
     public void update(float dt) {
+        handleInput();
 
     }
 

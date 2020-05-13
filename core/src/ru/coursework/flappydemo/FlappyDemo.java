@@ -10,7 +10,7 @@ import ru.coursework.flappydemo.states.MenuState;
 
 public class FlappyDemo extends ApplicationAdapter {
 	public static final int WIDTH = 480;
-	public static final int HEIGHT = 800;
+	public static final int HEIGHT = 700;
 
 	public static final String TITLE = "Flappy Demo";
 
